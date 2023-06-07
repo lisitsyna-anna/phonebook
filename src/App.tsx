@@ -68,8 +68,8 @@ const App: React.FC = () => {
               path="/contacts"
               element={<PrivateRoute component={ContactsPage} redirectTo={'/login'} />}
             />
+            <Route path="*" element={<NotFoundPage />} />
           </Route>
-          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       )}
     </ThemeProvider>
