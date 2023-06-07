@@ -17,6 +17,7 @@ const HomePage = lazy(() => import('./pages/HomePage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 const App: React.FC = () => {
   const [mode, setMode] = useState<'light' | 'dark'>('light');
@@ -68,6 +69,7 @@ const App: React.FC = () => {
               element={<PrivateRoute component={ContactsPage} redirectTo={'/login'} />}
             />
           </Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       )}
     </ThemeProvider>
