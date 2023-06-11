@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
       }}
     >
       <Helmet>
-        <title>MyPnonebook</title>
+        <title>MyPhonebook</title>
       </Helmet>
       <Typography component="h1" variant="h3">
         Welcome to your Phonebook
